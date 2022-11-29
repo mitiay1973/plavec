@@ -7,12 +7,37 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="preview">
+    <Page.Resources>
+        <ControlTemplate x:Key="ButtonTemplate1" TargetType="Button">
+            <Border TextBlock.Foreground="#46B29D" CornerRadius="2" BorderThickness="3" BorderBrush="#FFC6D7FF" Height="31" Width="97">
+                <Border.Background
+        >
+                    <LinearGradientBrush
+        >
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStopCollection
+        >
+                                <GradientStop
+        Color="#FFC6D7FF" Offset="0"/>
+                            </GradientStopCollection>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <ContentPresenter
+        RecognizesAccessKey="True"/>
+            </Border>
+        </ControlTemplate>
+    </Page.Resources>
+
 
     <Grid Background="White" Height="328">
         <TextBlock HorizontalAlignment="Left" Margin="10,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="172" Width="551" FontFamily="Monotype Corsiva" FontSize="20" Foreground="#FF46B29D"><Run Text="        "/><Run Text="К занятиям в спортивно-оздоровительных группах можно приступать в возрасте от "/><Run Text="3"/><Run Text=" до "/><Run Text="18"/><Run Text=" лет, имея любой уровень плавательной подготовленности."/><Run Text=" "/><LineBreak/><Run/><LineBreak/><Run Text="        "/><Run Text="Если не было никакого плавательного опыта"/><Run Text=","/><Run Text=" мы обязательно покажем"/><Run Text=","/><Run Text=" расскажем и научим всем вещам что бы стать превосходными плавцами!"/><LineBreak/><Run/></TextBlock>
         <Image Margin="602,30,10,30" Source="/Image3.png" Stretch="Fill"/>
-        <TextBlock HorizontalAlignment="Left" Margin="191,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="66" Width="351" FontFamily="Monotype Corsiva" FontSize="28" Foreground="#FF46B29D" Text="Желаем вам высочайших успехов!" TextAlignment="Center"/>
-        <Button Content="Button" HorizontalAlignment="Left"  Margin="318,278,0,0" VerticalAlignment="Top" BorderBrush="#FFC6D7FF" Background="#FFC6D7FF" Height="40" Width="138" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="191,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="66" Width="351" 
+                   FontFamily="Monotype Corsiva" FontSize="28" Foreground="#FF46B29D" Text="Желаем вам высочайших успехов!" TextAlignment="Center"/>
+
+
+        <Button Template="{DynamicResource ButtonTemplate1}" Content="    Button" HorizontalAlignment="Center"  Margin="0,278,0,0" VerticalAlignment="Top" BorderBrush="#FFC6D7FF" Background="#FFC6D7FF" Height="40" Width="103" FontSize="18" HorizontalContentAlignment="Left"/>
 
     </Grid>
 </Page>
