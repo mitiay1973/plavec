@@ -20,5 +20,6 @@
         <Grid Grid.Row="2" Grid.Column="1"  Background="#C6D7FF">
         </Grid>
         <Frame Grid.Row="1" NavigationUIVisibility='Hidden' Name="MainFrame"></Frame>
+        <Image Margin="0,0,674,353" Grid.RowSpan="2" Source="/Image6.png" Stretch="Fill"/>
     </Grid>
 </Window>
