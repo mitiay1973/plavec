@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Manager.cs" />
     <Compile Include="zapis.xaml.cs">
       <DependentUpon>zapis.xaml</DependentUpon>
     </Compile>

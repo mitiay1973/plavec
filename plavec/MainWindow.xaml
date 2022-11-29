@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="328*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0"  Background="#C6D7FF">
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1"  Background="#C6D7FF">
+        </Grid>
+        <Frame Grid.Row="1" NavigationUIVisibility='Hidden' Name="MainFrame"></Frame>
     </Grid>
 </Window>
