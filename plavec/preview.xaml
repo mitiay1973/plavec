@@ -8,7 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="preview">
 
-    <Grid>
-        
+    <Grid Background="White">
+        <TextBlock HorizontalAlignment="Left" Margin="10,144,0,0" TextWrapping="Wrap" Text="К занятиям в спортивно-оздоровительных группах можно приступать в возрасте от 6 до 17 лет, имея любой уровень плавательной подготовленности." VerticalAlignment="Top" Height="68" Width="565" FontFamily="Monotype Corsiva" FontSize="20"/>
+
     </Grid>
 </Page>
