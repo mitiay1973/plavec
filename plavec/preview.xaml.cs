@@ -20,9 +20,16 @@ namespace plavec
     /// </summary>
     public partial class preview : Page
     {
-        public preview()
+        public Frame frame1;
+        public preview(Frame frame)
         {
             InitializeComponent();
+            frame1 = frame;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            frame1.Navigate(new glavnaya(frame1));
         }
     }
 }

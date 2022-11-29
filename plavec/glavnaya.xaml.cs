@@ -20,9 +20,11 @@ namespace plavec
     /// </summary>
     public partial class glavnaya : Page
     {
-        public glavnaya()
+        public Frame frame1;
+        public glavnaya(Frame frame)
         {
             InitializeComponent();
+            frame1 = frame;
         }
     }
 }

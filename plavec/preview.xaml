@@ -37,7 +37,7 @@
                    FontFamily="Monotype Corsiva" FontSize="28" Foreground="#FF46B29D" Text="Желаем вам высочайших успехов!" TextAlignment="Center"/>
 
 
-        <Button Template="{DynamicResource ButtonTemplate1}" Content="    Button" HorizontalAlignment="Left"  Margin="315,278,0,0" VerticalAlignment="Top" BorderBrush="#FFC6D7FF" Background="#FFC6D7FF" Height="40" Width="103" FontSize="18" HorizontalContentAlignment="Left"/>
+        <Button Template="{DynamicResource ButtonTemplate1}" Content="    Button" HorizontalAlignment="Left"  Margin="315,278,0,0" VerticalAlignment="Top" BorderBrush="#FFC6D7FF" Background="#FFC6D7FF" Height="40" Width="103" FontSize="18" HorizontalContentAlignment="Left" Click="Button_Click"/>
 
     </Grid>
 </Page>

@@ -23,6 +23,7 @@ namespace plavec
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new preview(MainFrame));
         }
     }
 }
