@@ -8,7 +8,43 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="glavnaya">
 
-    <Grid>
-        
+    <Grid  Height="338" Width="800">
+        <DataGrid x:Name="Dgridraspisanie" AutoGenerateColumns="False" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=10}" SelectedItem="{Binding Path=SelectedCustomer, Mode=TwoWay}" SelectionChanged="Dgridreis_SelectionChanged" Margin="0,0,464,120" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Группа" Binding="{Binding group}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Тренер" Binding="{Binding trener}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Время занятия" Binding="{Binding time}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер бассеина" Binding="{Binding number}" ></DataGridTextColumn>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="Dgridеtrenera" AutoGenerateColumns="False" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=10}" SelectedItem="{Binding Path=SelectedCustomer, Mode=TwoWay}" SelectionChanged="Dgridreis_SelectionChanged" Margin="0,218,0,-9" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding SurName}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Otchestvo}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Возраст" Binding="{Binding Age}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Стаж" Binding="{Binding Staz}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Характеристика" Binding="{Binding Opisanie}" ></DataGridTextColumn>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="group1" Content="1 группа" HorizontalAlignment="Left" Margin="451,19,0,0" VerticalAlignment="Top" Height="27" Width="257"/>
+        <Button x:Name="group2" Content="2 группа" HorizontalAlignment="Left" Margin="451,56,0,0" VerticalAlignment="Top" Height="27" Width="257"/>
+        <Button x:Name="group3" Content="3 группа" HorizontalAlignment="Left" Margin="451,96,0,0" VerticalAlignment="Top" Height="26" Width="257"/>
+        <Button x:Name="group4" Content="4 группа" HorizontalAlignment="Left" Margin="451,134,0,0" VerticalAlignment="Top" Height="27" Width="257"/>
+        <Button x:Name="man" Content="Мальчики" HorizontalAlignment="Left" Margin="451,172,0,0" VerticalAlignment="Top" Height="27" Width="128"/>
+        <Button x:Name="woman" Content="Девочки" HorizontalAlignment="Left" Margin="580,172,0,0" VerticalAlignment="Top" Height="27" Width="128"/>
+
     </Grid>
 </Page>
